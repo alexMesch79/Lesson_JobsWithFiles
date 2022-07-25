@@ -5,6 +5,7 @@ build/
 !**/src/test/**/build/
 
 ### IntelliJ IDEA ###
+.idea
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -55,4 +56,5 @@ target/
 .vscode
 /gradlew
 /gradlew.bat
+settings.gradle
 *.properties
