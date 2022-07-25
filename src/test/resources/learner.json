@@ -1,0 +1,9 @@
+{
+	"name": "Alex",
+  "secondName": "Meshcherjakov",
+  "age": 40,
+  "passport": {
+      "series": 5602,
+	  "number": 415200
+  }
+}
