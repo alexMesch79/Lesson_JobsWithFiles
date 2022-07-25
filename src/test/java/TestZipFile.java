@@ -17,7 +17,7 @@ public class TestZipFile {
 
     ClassLoader classLoader = TestZipFile.class.getClassLoader();
 
-    @DisplayName("Проверяем файл User5.csv в zip-архиве")
+    @DisplayName("Проверяем файл User5.csv в zip_архиве")
     @Test
     void csvTest() throws Exception {
 
@@ -28,12 +28,12 @@ public class TestZipFile {
         CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream));
         list = csvReader.readAll();
         assertThat(list).contains(
-                new String[] {"Username; Identifier;First name;Last name"},
-                new String[] {"Agent007;007;James;Bond"});
+                new String[]{"Username; Identifier;First name;Last name"},
+                new String[]{"Agent007;007;James;Bond"});
 
     }
 
-    @DisplayName("Проверяем файл sample1.xlsx в zip-архиве")
+    @DisplayName("Проверяем файл sample1.xlsx в zip_архиве")
     @Test
     void checkXLSTest() throws Exception {
         ZipFile zipFile = new ZipFile(Objects.requireNonNull(classLoader.getResource("SampleZip.zip")).getFile());
@@ -48,7 +48,7 @@ public class TestZipFile {
                 .contains("This is description");
     }
 
-    @DisplayName("Проверяем файл sample4.pdf в zip-архиве")
+    @DisplayName("Проверяем файл sample4.pdf в zip_архиве")
     @Test
     void pdfTest() throws Exception {
 
